@@ -105,8 +105,9 @@ def winner(board)
 end
 
 def play(board)
-
-  until over?(board)
+  counter = 0
+  until over?(board) || counter == 9 
+    counter +=1
     turn(board)
   end
 
