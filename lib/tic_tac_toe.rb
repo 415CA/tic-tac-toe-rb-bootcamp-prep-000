@@ -107,7 +107,6 @@ end
 def play(board)
   while !over?(board)
       turn(board)
-      move(board, index, player)
       turn_count(board)
       current_player(board)
   end
