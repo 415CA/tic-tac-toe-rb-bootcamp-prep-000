@@ -107,6 +107,8 @@ end
 def play(board)
   while !over?(board)
       turn(board)
+      turn_count(board)
+      current_player(board)
   end
   if winner(board)
     puts "Congratulations #{winner(board)[0]}!"
