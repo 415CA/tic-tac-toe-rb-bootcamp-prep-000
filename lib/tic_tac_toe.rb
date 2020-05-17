@@ -105,7 +105,7 @@ def winner(board)
 end
 
 def play(board)
-  counter = 0
+
   while over?(board) != true
     user_input = gets.strip
     turn(board)
