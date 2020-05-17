@@ -105,7 +105,7 @@ def winner(board)
 end
 
 def play(board)
-  while !over?(board)
+  while !over?(board) && turn_count(board) <9
       turn(board)
       turn_count(board)
       current_player(board)
@@ -115,4 +115,5 @@ def play(board)
   elsif draw?(board)
     puts "Cat's Game!"
   end
+  pla
 end
