@@ -105,15 +105,14 @@ def winner(board)
 end
 
 def play(board)
-  while !over?(board) && turn_count(board) <9
+  counter = 0
+  while !over?(board) && counter != 9
       turn(board)
-      turn_count(board)
-      current_player(board)
+      counter += 1
   end
   if winner(board)
     puts "Congratulations #{winner(board)[0]}!"
   elsif draw?(board)
     puts "Cat's Game!"
   end
-  pla
 end
