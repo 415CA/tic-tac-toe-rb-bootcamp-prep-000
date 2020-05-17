@@ -106,8 +106,8 @@ end
 
 def play(board)
   counter = 0
-  while over?(board) || counter == 9 
-    counter +=1
+  while over?(board) != true
+    user_input = gets.strip
     turn(board)
   end
 
