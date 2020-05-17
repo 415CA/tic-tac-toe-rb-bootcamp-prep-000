@@ -50,7 +50,7 @@ def turn(board)
   else
     turn(board)
   end
-  display_board(board)
+  puts display_board(board)
 end
 
 def turn_count(board)
@@ -105,14 +105,14 @@ def winner(board)
 end
 
 def play(board)
+
   until over?(board)
     turn(board)
   end
-  if over?(board)
-    if winner(board)
-      puts "Congratulations #{winner(board)[0]}!"
-    elsif draw?(board)
-      puts "Cat's Game!"
-    end
+
+  if winner(board)
+    puts "Congratulations #{winner(board)[0]}!"
+  elsif draw?(board)
+    puts "Cat's Game!"
   end
 end
