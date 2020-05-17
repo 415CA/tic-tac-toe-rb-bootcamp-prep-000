@@ -106,7 +106,6 @@ end
 
 def play(board)
   while !over?(board)
-    puts "Your turn"
       turn(board)
   end
   if winner(board)
